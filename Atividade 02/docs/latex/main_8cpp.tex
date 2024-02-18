@@ -1,0 +1,50 @@
+\doxysection{C\+:/\+Users/\+Marcos/\+Documents/\+PROJETOS/computacao-\/grafica-\/2023-\/2/\+Atividade 01/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{C:/Users/Marcos/Documents/PROJETOS/computacao-\/grafica-\/2023-\/2/Atividade 01/main.cpp@{C:/Users/Marcos/Documents/PROJETOS/computacao-\/grafica-\/2023-\/2/Atividade 01/main.cpp}}
+
+
+Demonstração do uso da classe Image\+Processor para gerar imagens com gradientes, círculos e quadrados.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}includes/\+Image\+Processor.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Demonstração do uso da classe Image\+Processor para gerar imagens com gradientes, círculos e quadrados. 
+
+\begin{DoxyAuthor}{Author}
+Martin Henrique Viana Adam 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ Inicialização\ de\ uma\ instância\ de\ ImageProcessor\ com\ dimensões\ 256x256}}
+\DoxyCodeLine{00012\ \ \ \ \ ImageProcessor\ imageProcessor(256,\ 256);}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Gerar\ um\ gradiente\ na\ imagem}}
+\DoxyCodeLine{00015\ \ \ \ \ imageProcessor.makeGradient();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Desenhar\ um\ círculo\ vermelho\ (r=255,\ g=0,\ b=0)\ com\ raio\ 100\ e\ centro\ (128,\ 128)}}
+\DoxyCodeLine{00018\ \ \ \ \ imageProcessor.makeCircle(128,\ 128,\ 100,\ 255,\ 0,\ 0);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Desenhar\ um\ quadrado\ vermelho\ (r=255,\ g=0,\ b=0)\ com\ coordenadas\ (100,\ 100)\ e\ tamanho\ 50x50}}
+\DoxyCodeLine{00021\ \ \ \ \ imageProcessor.makeSquare(100,\ 100,\ 50,\ 255,\ 0,\ 0);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00024\ \}}
+
+\end{DoxyCode}
